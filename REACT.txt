@@ -1,0 +1,24 @@
+def cadastrar_animal():
+    animal = {}
+
+    animal["nome"] = input("Digite o nome do animal: ")
+
+    animal["raca"] = input("Digite a raça do animal: ")
+
+    animal["idade"] = input("Digite a idade do animal: ")
+
+    animal["responsavel"] = input("Digite o nome do responsável: ")
+
+    animal["telefone"] = input("Digite o telefone do responsável: ")
+
+    return animal
+
+
+
+animal_cadastrado = cadastrar_animal()
+
+print("\nCadastro do Animal de Estimação:")
+
+for chave, valor in animal_cadastrado.items():
+
+print(f"{chave.capitalize()}: {valor}")
